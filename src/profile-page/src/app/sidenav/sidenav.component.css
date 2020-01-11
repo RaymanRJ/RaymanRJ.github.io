@@ -7,16 +7,27 @@ mat-sidenav, mat-sidenav-content{
 }
 
 mat-sidenav{
-  background-color: goldenrod;
+  background-color: var(--accent-color);
   width: 200px;
+}
+
+mat-toolbar{
+  background-color: var(--background-color);
 }
 
 mat-toolbar-row{
   cursor: pointer;
 }
 
-mat-toolbar-row:hover{
-  background-color: black;
+mat-toolbar-row:hover *{
+  background-color: var(--accent-color);
+  color: var(--text-color);
+}
+
+mat-toolbar-row:hover {
+  background-color: var(--accent-color);
+  color: var(--text-color);
+  font-size: x-large;
 }
 
 .icon {

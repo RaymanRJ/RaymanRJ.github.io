@@ -1,4 +1,25 @@
 /* You can add global styles to this file, and also import other style files */
+:root{
+    --primary-color: #673ab7;
+    --accent-color: #ffd740;
+    --warn-color: #f44336;
+    --text-color: #f5f5f5;
+
+    
+    --primary-color: #4C4C47;
+    --accent-color: #2D2D2A;
+    --tertiary-color: #848FA5;
+    --warn-color: #C14953;
+    --text-color: #E5DCC5;
+}
 
 html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif;
+    min-width: 500px; }
+
+* {
+    margin: 0px;
+    padding: 0px;
+    background-color:var(--primary-color);
+}
