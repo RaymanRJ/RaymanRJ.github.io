@@ -1,0 +1,30 @@
+mat-sidenav-container {
+  height: 100%
+}
+
+mat-sidenav, mat-sidenav-content{
+  padding: 16px;
+}
+
+mat-sidenav{
+  background-color: purple;
+  width: 200px;
+}
+
+mat-toolbar-row{
+  cursor: pointer;
+}
+
+mat-toolbar-row:hover{
+  
+  background-color: black;
+
+}
+
+.icon {
+  padding: 0 14px;
+}
+
+.spacer {
+  flex: 1 1 auto;
+}
