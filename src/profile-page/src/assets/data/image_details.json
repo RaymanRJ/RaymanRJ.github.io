@@ -1,0 +1,52 @@
+{
+    "image_details":[
+            {
+                "filepath": "dongdaemun-design-plaza-leds.jpg",
+                "title": "Dongdaemun Design Plaza",
+                "city": "Seoul",
+                "country": "South Korea"
+            },
+            {
+                "filepath": "seoul-olympic-park.jpg",
+                "title": "Seoul Olympic Park",
+                "city": "Seoul",
+                "country": "South Korea"
+            },
+            {
+                "filepath": "shibuya-crossing.jpg",
+                "title": "Shibuya Crossing",
+                "city": "Tokyo",
+                "country": "Japan"
+            },
+            {
+                "filepath": "shinjuku-goyen.jpg",
+                "title": "Shinjuku Goyen National Garden",
+                "city": "Tokyo",
+                "country": "Japan"
+            },
+            {
+                "filepath": "big-buddha.jpg",
+                "title": "Big Buddha",
+                "city": "Phuket",
+                "country": "Thailand"
+            },
+            {
+                "filepath": "tiger-temple.jpg",
+                "title": "Tiger Temple",
+                "city": "Phuket",
+                "country": "Thailand"
+            },
+            {
+                "filepath": "tiger-temple-2.jpg",
+                "title": "Tiger Temple",
+                "city": "Phuket",
+                "country": "Thailand"
+            },
+            {
+                "filepath": "waujeongsa-temple.jpg",
+                "title": "Waujeongsa Temple",
+                "city": "Yongin",
+                "country": "South Korea"
+            }
+    ]
+}

@@ -33,6 +33,10 @@
 
         <app-header></app-header>
 
+        <ul>
+            <li *ngFor='let image of imageDetails'>{{image.filepath}}</li>
+        </ul>
+
         <!-- Content to display: -->
         <div [ngSwitch]='content' color=primary>
             <app-profile *ngSwitchCase="'Profile'"></app-profile>

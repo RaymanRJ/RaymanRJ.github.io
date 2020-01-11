@@ -15,6 +15,8 @@ import { ProfileComponent } from './profile/profile.component';
 import { ProjectsComponent } from './projects/projects.component';
 import { ContactComponent } from './contact/contact.component';
 
+import { ImagesService } from './images.service';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -32,7 +34,9 @@ import { ContactComponent } from './contact/contact.component';
     MaterialModule,
     BrowserAnimationsModule
   ],
-  providers: [],
+  providers: [
+    ImagesService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

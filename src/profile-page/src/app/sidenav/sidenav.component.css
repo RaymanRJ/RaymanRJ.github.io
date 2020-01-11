@@ -22,12 +22,12 @@ mat-toolbar-row{
 mat-toolbar-row:hover *{
   /*background-color: var(--accent-color);*/
   /*color: var(--text-color);*/
+  font-size: x-large;
 }
 
 mat-toolbar-row:hover {
   /*background-color: var(--accent-color);
   color: var(--text-color);*/
-  font-size: x-large;
 }
 
 .icon {
