@@ -1,26 +1,26 @@
-<mat-sidenav-container color='primary'>
-    <mat-sidenav #sidenav>
+<mat-sidenav-container>
+    <mat-sidenav #sidenav color='primary'>
         
         <mat-toolbar color='primary'>
-            <mat-toolbar-row (click)="log('Home')">
+            <mat-toolbar-row (click)="change_content('Home')">
                 <span>Home</span>
                 <span class="spacer"></span>
                 <mat-icon class="icon">chevron_right</mat-icon>
             </mat-toolbar-row>
             
-            <mat-toolbar-row (click)="log('Profile')">
+            <mat-toolbar-row (click)="change_content('Profile')">
                 <span>Profile</span>
                 <span class="spacer"></span>
                 <mat-icon class="icon">chevron_right</mat-icon>
             </mat-toolbar-row>
 
-            <mat-toolbar-row (click)="log('Projects')">
+            <mat-toolbar-row (click)="change_content('Projects')">
                 <span>Projects</span>
                 <span class="spacer"></span>
                 <mat-icon class="icon">chevron_right</mat-icon>
             </mat-toolbar-row>
 
-            <mat-toolbar-row (click)="log('Contact')">
+            <mat-toolbar-row (click)="change_content('Contact')">
                 <span>Contact</span>
                 <span class="spacer"></span>
                 <mat-icon class="icon">chevron_right</mat-icon>
@@ -30,10 +30,15 @@
     </mat-sidenav>
 
         
-    <mat-sidenav-content>Main
+    <mat-sidenav-content>
+
+        <app-header></app-header>
+
         <button (click)="opened=!opened">Toggle Opened</button>
         <button (click)="sidenav.open()">Open</button>
         <button (click)="sidenav.close()">Close</button>
         <button (click)="sidenav.toggle()">Toggle</button>
+
+        <app-footer></app-footer>
     </mat-sidenav-content>
 </mat-sidenav-container>

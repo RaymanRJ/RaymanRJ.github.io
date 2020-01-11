@@ -1,4 +1,4 @@
-mat-sidenav-container {
+mat-sidenav-container, mat-toolbar {
   height: 100%
 }
 
@@ -7,7 +7,7 @@ mat-sidenav, mat-sidenav-content{
 }
 
 mat-sidenav{
-  background-color: purple;
+  background-color: goldenrod;
   width: 200px;
 }
 
@@ -16,9 +16,7 @@ mat-toolbar-row{
 }
 
 mat-toolbar-row:hover{
-  
   background-color: black;
-
 }
 
 .icon {

@@ -7,10 +7,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SidenavComponent implements OnInit {
   opened = false;
+  content = 'Home';
 
-  log(state){
-    console.log(state)
+  change_content(content: string) {
+    this.content = content;
+    console.log(content);
   }
+
   constructor() { }
 
   ngOnInit() {
