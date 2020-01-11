@@ -20,4 +20,11 @@ export class SidenavComponent implements OnInit {
     console.log(content);
   }
 
+  getHomeImage(): AppImage{
+    for(let image of this.imageDetails){
+      if (image.filepath == "tiger-temple.jpg")
+        return image;
+    }
+  }
+
 }

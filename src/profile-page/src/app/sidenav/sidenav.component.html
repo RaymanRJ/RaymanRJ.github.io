@@ -33,16 +33,12 @@
 
         <app-header></app-header>
 
-        <ul>
-            <li *ngFor='let image of imageDetails'>{{image.filepath}}</li>
-        </ul>
-
         <!-- Content to display: -->
         <div [ngSwitch]='content' color=primary>
-            <app-profile *ngSwitchCase="'Profile'"></app-profile>
+            <app-profile *ngSwitchCase="'Profile'" [images]='imageDetails'></app-profile>
             <app-projects *ngSwitchCase="'Projects'"></app-projects>
             <app-contact *ngSwitchCase="'Contact'"></app-contact>
-            <app-home *ngSwitchDefault></app-home>
+            <app-home *ngSwitchDefault [image]='getHomeImage()'></app-home>
         </div>
 
         <button (click)="opened=!opened">Toggle Opened</button>
