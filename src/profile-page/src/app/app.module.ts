@@ -10,13 +10,21 @@ import { SidenavComponent } from './sidenav/sidenav.component';
 import { MaterialModule } from './material-module';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
+import { HomeComponent } from './home/home.component';
+import { ProfileComponent } from './profile/profile.component';
+import { ProjectsComponent } from './projects/projects.component';
+import { ContactComponent } from './contact/contact.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     SidenavComponent,
     HeaderComponent,
-    FooterComponent
+    FooterComponent,
+    HomeComponent,
+    ProfileComponent,
+    ProjectsComponent,
+    ContactComponent
   ],
   imports: [
     BrowserModule,

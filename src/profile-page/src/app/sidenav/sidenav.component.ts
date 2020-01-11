@@ -6,7 +6,6 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./sidenav.component.css']
 })
 export class SidenavComponent implements OnInit {
-  opened = false;
   content = 'Home';
 
   change_content(content: string) {

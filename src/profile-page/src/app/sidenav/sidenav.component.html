@@ -2,25 +2,25 @@
     <mat-sidenav #sidenav color='primary'>
         
         <mat-toolbar color='primary'>
-            <mat-toolbar-row (click)="change_content('Home')">
+            <mat-toolbar-row (click)="change_content('Home'); sidenav.close()">
                 <span>Home</span>
                 <span class="spacer"></span>
                 <mat-icon class="icon">chevron_right</mat-icon>
             </mat-toolbar-row>
             
-            <mat-toolbar-row (click)="change_content('Profile')">
+            <mat-toolbar-row (click)="change_content('Profile'); sidenav.close()">
                 <span>Profile</span>
                 <span class="spacer"></span>
                 <mat-icon class="icon">chevron_right</mat-icon>
             </mat-toolbar-row>
 
-            <mat-toolbar-row (click)="change_content('Projects')">
+            <mat-toolbar-row (click)="change_content('Projects'); sidenav.close()">
                 <span>Projects</span>
                 <span class="spacer"></span>
                 <mat-icon class="icon">chevron_right</mat-icon>
             </mat-toolbar-row>
 
-            <mat-toolbar-row (click)="change_content('Contact')">
+            <mat-toolbar-row (click)="change_content('Contact'); sidenav.close()">
                 <span>Contact</span>
                 <span class="spacer"></span>
                 <mat-icon class="icon">chevron_right</mat-icon>
@@ -28,11 +28,18 @@
         </mat-toolbar>
     
     </mat-sidenav>
-
         
     <mat-sidenav-content>
 
         <app-header></app-header>
+
+        <!-- Content to display: -->
+        <div [ngSwitch]='content' color=primary>
+            <app-profile *ngSwitchCase="'Profile'"></app-profile>
+            <app-projects *ngSwitchCase="'Projects'"></app-projects>
+            <app-contact *ngSwitchCase="'Contact'"></app-contact>
+            <app-home *ngSwitchDefault></app-home>
+        </div>
 
         <button (click)="opened=!opened">Toggle Opened</button>
         <button (click)="sidenav.open()">Open</button>
@@ -40,5 +47,6 @@
         <button (click)="sidenav.toggle()">Toggle</button>
 
         <app-footer></app-footer>
+
     </mat-sidenav-content>
 </mat-sidenav-container>
