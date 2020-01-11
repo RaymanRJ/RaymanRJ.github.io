@@ -37,3 +37,7 @@ mat-toolbar-row:hover {
 .spacer {
   flex: 1 1 auto;
 }
+
+.v-space{
+  height: 5%;
+}

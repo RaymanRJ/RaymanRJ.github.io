@@ -1,6 +1,7 @@
 <mat-sidenav-container>
+
+    <!-- Side Nav -->
     <mat-sidenav #sidenav>
-        
         <mat-toolbar>
             <mat-toolbar-row (click)="change_content('Home'); sidenav.close()">
                 <span>Home</span>
@@ -28,12 +29,16 @@
         </mat-toolbar>
     
     </mat-sidenav>
-        
-    <mat-sidenav-content>
+    
+    <!-- Body -->
 
+    <mat-sidenav-content>
+        
         <app-header></app-header>
 
-        <!-- Content to display: -->
+        <div class="v-space"></div>
+
+        <!-- Content to display in body: -->
         <div [ngSwitch]='content' color=primary>
             <app-profile *ngSwitchCase="'Profile'" [images]='imageDetails'></app-profile>
             <app-projects *ngSwitchCase="'Projects'"></app-projects>

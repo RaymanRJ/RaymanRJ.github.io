@@ -9,9 +9,7 @@ import { AppImage } from 'src/classes/image';
 export class HomeComponent implements OnInit {
   constructor() { }
   ngOnInit() {  }
-
-  main_picture = "assets/img/logo";
-
+  
   @Input() image: AppImage;
 
 }
