@@ -1,0 +1,12 @@
+* {
+    margin: 0 auto;
+    text-align: center;
+}
+
+.carousel-container img{
+    max-height: 400px;
+}
+
+.carousel-container{
+    background-color: gray;
+}

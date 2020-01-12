@@ -1,3 +1,13 @@
-<div class='image' *ngFor='let image of images'>
-    <app-image [image]="image"></app-image>
+<div class="carousel-container">
+    <ngb-carousel interval="10000" [pauseOnHover]="pauseOnHover">
+        <ng-template ngbSlide *ngFor="let image of images">
+        <div class="picsum-img-wrapper">
+            <img [src]="get_path(image)">
+        </div>
+        <div class="carousel-caption">
+            <h3>{{image.title}}</h3>
+            <p>{{image.city}}, {{image.country}}</p>
+        </div>
+        </ng-template>
+    </ngb-carousel>
 </div>

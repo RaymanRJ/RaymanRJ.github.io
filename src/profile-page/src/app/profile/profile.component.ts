@@ -10,7 +10,10 @@ export class ProfileComponent implements OnInit {
   constructor() { }
   ngOnInit() { }
 
+  paused = false;
+  pauseOnHover = true;
+
   @Input() images: AppImage[];
 
-
+  get_path = (image: AppImage): string => `../assets/images/${image.filepath}`;
 }

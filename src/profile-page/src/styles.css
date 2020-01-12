@@ -25,3 +25,8 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif;
     padding: 0px;
     /*background-color:var(--primary-color);*/
 }
+
+.image{
+    max-width: 50%;
+    margin: 0 auto;
+}

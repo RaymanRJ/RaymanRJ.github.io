@@ -36,6 +36,11 @@
         
         <app-header></app-header>
 
+        <!-- Menu Control -->
+        <button mat-fab (click)="sidenav.open()">
+            <mat-icon class="icon">chevron_right</mat-icon>
+        </button>
+
         <div class="v-space"></div>
 
         <!-- Content to display in body: -->
@@ -45,11 +50,6 @@
             <app-contact *ngSwitchCase="'Contact'"></app-contact>
             <app-home *ngSwitchDefault [image]='getHomeImage()'></app-home>
         </div>
-
-        <button (click)="opened=!opened">Toggle Opened</button>
-        <button (click)="sidenav.open()">Open</button>
-        <button (click)="sidenav.close()">Close</button>
-        <button (click)="sidenav.toggle()">Toggle</button>
 
         <app-footer></app-footer>
 
