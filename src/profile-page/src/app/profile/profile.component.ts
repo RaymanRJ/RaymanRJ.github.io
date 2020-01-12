@@ -13,5 +13,4 @@ export class ProfileComponent implements OnInit {
   @Input() images: AppImage[];
 
 
-
 }

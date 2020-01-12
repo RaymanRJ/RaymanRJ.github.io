@@ -1,5 +1,3 @@
-<p>profile works!</p>
-
-{{ image }}
-
-HERE
+<div class='image' *ngFor='let image of images'>
+    <app-image [image]="image"></app-image>
+</div>
