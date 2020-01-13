@@ -20,9 +20,8 @@
     </div>
 </ul>
 -->
-
-<ul *ngIf="repos">
-    <li *ngFor="let repo of repos">
+<mat-grid-list cols="3" rowHeight="2:1"  *ngIf="repos">
+    <mat-grid-tile *ngFor="let repo of repos">
         <div class="repo-container">
             <div class="repo-header">
                 <div class="repo-language">
@@ -41,5 +40,5 @@
                 Last updated: {{ format_date(repo.updated_at) }}
             </div>
         </div>
-    </li>
-</ul>
+    </mat-grid-tile>
+</mat-grid-list>
