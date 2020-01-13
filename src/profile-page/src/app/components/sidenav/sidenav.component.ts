@@ -10,7 +10,7 @@ import { AppImage } from 'src/classes/image';
 export class SidenavComponent implements OnInit {
 
   imageDetails: AppImage[] = image_details;
-  content = 'Home';
+  content = 'Projects';
 
   constructor() { }
   ngOnInit() { }

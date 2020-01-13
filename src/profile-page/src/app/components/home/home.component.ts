@@ -7,9 +7,10 @@ import { AppImage } from 'src/classes/image';
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent implements OnInit {
-  constructor() { }
-  ngOnInit() {  }
   
   @Input() image: AppImage;
+
+  constructor() { }
+  ngOnInit() {  }
 
 }

@@ -30,3 +30,11 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif;
     max-width: 50%;
     margin: 0 auto;
 }
+
+.carousel-container img{
+    max-height: 400px;
+}
+
+.carousel-container{
+    background-color: gray;
+}

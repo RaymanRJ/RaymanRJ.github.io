@@ -8,13 +8,15 @@ import { RequestService } from 'src/app/services/request.service';
   providers:[RequestService]
 })
 export class ProjectsComponent implements OnInit {
+  repos: any;
 
   constructor(private requestService: RequestService) { }
 
-  ngOnInit() { 
+  ngOnInit() {
     this.requestService.getData("https://api.github.com/users/raymanrj/repos").subscribe( data => this.repos = data );
   }
 
-  repos: any;
-
+  format_date(date: string): string{
+    return date.substring(0, 10);
+  }
 }

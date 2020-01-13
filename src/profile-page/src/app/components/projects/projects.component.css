@@ -1,0 +1,29 @@
+ul{
+    list-style-type: none;
+    list-style-position: inside;
+}
+
+li{
+    margin-bottom: 1%;
+    background-color: var(--primary-color);
+}
+
+li:nth-child(odd){ background-color: var(--accent-color);}
+
+li:hover{background-color: var(--tertiary-color); cursor: default;}
+
+.repo-language{
+    width: 100%;
+    background-color: var(--tertiary-color);
+    font-size: small;
+}
+
+.repo-name{
+    font-size:x-large;
+}
+
+.repo-container{
+    padding: 1%;
+}
+*{
+}

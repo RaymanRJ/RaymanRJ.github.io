@@ -1,5 +1,45 @@
+<!--
+<ul *ngIf="repos">
+    <div class='card' *ngFor="let repo of repos">
+        <div class='card-body'>
+            <div class='card-header'>
+                {{repo.language}}
+            </div>
+            <a href='{{repo.html_url}}'>
+                <h5 class='card-title'>
+                    {{repo.name}}
+                </h5>
+            </a>
+            <p class='card-text'>
+                {{repo.description}}
+            </p>
+            <div class='card-footer'>
+                Last updated: {{repo.updated_at}}
+            </div>
+        </div>
+    </div>
+</ul>
+-->
+
 <ul *ngIf="repos">
     <li *ngFor="let repo of repos">
-        {{repo.name}}
+        <div class="repo-container">
+            <div class="repo-header">
+                <div class="repo-language">
+                    Written in: {{repo.language}}
+                </div>
+                <div class="repo-name">
+                    <a href="{{repo.html_url}}">
+                        {{repo.name}}
+                    </a>
+                </div>
+            </div>
+            <div class="repo-body">
+                {{repo.description}}
+            </div>
+            <div class="repo-footer">
+                Last updated: {{ format_date(repo.updated_at) }}
+            </div>
+        </div>
     </li>
 </ul>
