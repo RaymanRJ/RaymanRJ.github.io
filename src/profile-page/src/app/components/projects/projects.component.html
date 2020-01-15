@@ -20,25 +20,40 @@
     </div>
 </ul>
 -->
-<mat-grid-list cols="3" rowHeight="2:1"  *ngIf="repos">
-    <mat-grid-tile *ngFor="let repo of repos">
-        <div class="repo-container">
-            <div class="repo-header">
-                <div class="repo-language">
-                    Written in: {{repo.language}}
-                </div>
-                <div class="repo-name">
-                    <a href="{{repo.html_url}}">
-                        {{repo.name}}
-                    </a>
-                </div>
-            </div>
-            <div class="repo-body">
-                {{repo.description}}
-            </div>
-            <div class="repo-footer">
-                Last updated: {{ format_date(repo.updated_at) }}
-            </div>
+
+<div class="container">
+    <div class="row">
+        <div class="col-1"></div>
+        <div class="col-10">
+            <mat-grid-list cols="3" *ngIf="repos">
+                <mat-grid-tile *ngFor="let repo of repos">
+                    <div class="repo-container">
+                        <mat-grid-tile-header>
+                            <a href="{{repo.html_url}}">
+                                {{repo.name}}
+                            </a>
+                            <!-- <div class="repo-header">
+                                <div class="repo-language" *ngIf="repo.language">
+                                    Written in: {{repo.language}}
+                                </div>
+                                <div class="repo-name">
+                                    <a href="{{repo.html_url}}">
+                                        {{repo.name}}
+                                    </a>
+                                </div>
+                            </div> -->
+                        </mat-grid-tile-header>
+                        <div class="repo-body" *ngIf="repo.description else elseBody">
+                            {{repo.description}}
+                        </div>
+                        <ng-template #elseBody>No description.</ng-template>
+                        <mat-grid-tile-footer>
+                            Last updated: {{ format_date(repo.updated_at) }}
+                        </mat-grid-tile-footer>
+                    </div>
+                </mat-grid-tile>
+            </mat-grid-list>
         </div>
-    </mat-grid-tile>
-</mat-grid-list>
+        <div class="col-1"></div>
+    </div>
+</div>
