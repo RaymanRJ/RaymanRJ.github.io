@@ -1,0 +1,141 @@
+/*
+@import url('https://fonts.googleapis.com/css?family=Great+Vibes');
+@import url('https://fonts.googleapis.com/css?family=Cormorant+Unicase');
+*/
+@import url('https://fonts.googleapis.com/css?family=Lora');
+
+:root{
+	--void: #0E0B16;	/* dark purple/blue */
+	--fuschia: #A239CA;	
+	--jewel: #4717F6;	/* royal blue */
+	--stark: #E7DFDD;	/* tan */
+	--lightblue: #DDDFE7;
+	--lightgreen: #DEE7DD;
+	--darkpurple: #4c3c77;
+}
+
+body{
+	background-color: var(--void)
+}
+
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: var(--darkpurple);
+  color: white;
+  text-align: center;
+}
+
+h1{
+	/*
+	font-family: 'Great Vibes', cursive;
+	font-family: 'Cormorant Unicase', serif;
+	*/
+	font-family: 'Lora', serif; 
+	color: var(--void);
+	text-align: center;
+	font-size: 2em;
+	letter-spacing: 0.25em;
+	cursor: default;
+	margin: 0px;
+	padding: 0px;
+}
+
+h3{
+	color: var(--stark);
+	text-align: center;
+	font-size: 2em;
+	letter-spacing: 0.1em;
+	cursor: default;
+	margin-top: 1%;
+}
+
+.card-body{
+	margin: 0px !important;
+	padding: 0px !important;
+}
+
+#card-holder{
+	min-width: 200px !important;
+	max-width: 600px !important;
+	text-align: center;
+	margin: 0 auto;
+	overflow-y: auto;
+}
+
+#card-holder div{
+	margin: 2%;
+}
+
+.card-footer, .card-header{
+	width: auto;
+	height: auto;
+	text-align: left;
+	font-size: 0.75em;
+	padding: 0.5em;
+	margin: 0px;
+}
+
+.card-title{
+	font-size: 1.5em !important;
+}
+
+.card-text{
+	color: var(--void);
+}
+
+.carousel-inner{
+	min-height: 200px !important;
+	max-height: 600px !important;
+	overflow-y: auto;
+}
+
+.details{
+	text-align: center;
+	margin: 5%;
+	min-height: 400px;
+}
+
+.details h5, p{
+	color: var(--stark);
+	cursor: default;
+}
+
+.details img{
+	border: 1px solid #ddd;
+	padding: 5px;
+	max-width: 500px;
+	border-radius: 50%;
+	margin: 0 auto;
+}
+
+.details ul{
+	margin: 0 auto;
+	width: 50%;
+}
+
+.jumbotron{
+	background-color: var(--stark);
+	padding-top: 2.5%;
+	padding-bottom: 2.5%;
+}
+
+.repo-card{
+	margin: 0px;
+	padding: 0px;
+}
+.slide{
+	background-color: var(--darkpurple);
+}
+
+
+/*
+#welcome{
+	text-align: center;
+	min-height: 400px;
+	padding: 5%;
+	margin: 5%;
+	margin-bottom: 10%;
+}*/
